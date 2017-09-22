@@ -3,91 +3,91 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://example.org/post/2015-07-23-r-rmarkdown/</loc>
+    <loc>/post/2015-07-23-r-rmarkdown/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.org/work/proj-1/</loc>
+    <loc>/work/proj-1/</loc>
   </url>
   
   <url>
-    <loc>https://example.org/work/proj-2/</loc>
+    <loc>/work/proj-2/</loc>
   </url>
   
   <url>
-    <loc>https://example.org/work/proj-3/</loc>
+    <loc>/work/proj-3/</loc>
   </url>
   
   <url>
-    <loc>https://example.org/work/proj-4/</loc>
+    <loc>/work/proj-4/</loc>
   </url>
   
   <url>
-    <loc>https://example.org/work/proj-5/</loc>
+    <loc>/work/proj-5/</loc>
   </url>
   
   <url>
-    <loc>https://example.org/work/proj-6/</loc>
+    <loc>/work/proj-6/</loc>
   </url>
   
   <url>
-    <loc>https://example.org/work/proj-7/</loc>
+    <loc>/work/proj-7/</loc>
   </url>
   
   <url>
-    <loc>https://example.org/work/proj-8/</loc>
+    <loc>/work/proj-8/</loc>
   </url>
   
   <url>
-    <loc>https://example.org/categories/</loc>
+    <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://example.org/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://example.org/tags/plot/</loc>
+    <loc>/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://example.org/post/</loc>
+    <loc>/tags/plot/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://example.org/categories/r/</loc>
+    <loc>/post/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://example.org/tags/r-markdown/</loc>
+    <loc>/categories/r/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://example.org/tags/regression/</loc>
+    <loc>/tags/r-markdown/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://example.org/tags/</loc>
+    <loc>/tags/regression/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://example.org/work/</loc>
+    <loc>/tags/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/work/</loc>
     <priority>0</priority>
   </url>
   

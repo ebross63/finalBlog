@@ -34,7 +34,7 @@ theme = "hugo-artists-theme"
 	# Do the same with the logo ('logo.svg').
 	# But keep the original filename!
 	[params.header]
-		title = "Artists Theme"
+		title = "Elizabeth's Blog"
 		shortBio = "MS in Data Science at Mercyhurst University"
 
 
@@ -103,6 +103,15 @@ theme = "hugo-artists-theme"
 		[[params.contact.social]]
 			icon = "linkedin"
 			link = "//www.linkedin.com/in/travisneilson"
+
+
+	[params.form]
+		title = "Let's work together"
+		# Form fields
+		name = "Your Name"
+		email = "Your Email"
+		message = "Tell me about your project"
+		buttonText = "Send"
 
 
 	[params.footer]
