@@ -1,7 +1,7 @@
 # Site settings
 baseurl = "https://elizabethsfinalblog.netlify.com/"
 languageCode = "en-us"
-title = "Hugo Artists Theme"
+title = "Elizabeth's Data Science Blog"
 theme = "hugo-artists-theme"
 
 [params]
@@ -35,7 +35,7 @@ theme = "hugo-artists-theme"
 	# But keep the original filename!
 	[params.header]
 		title = "Artists Theme"
-		shortBio = "Thinker // Designer // YouTuber"
+		shortBio = "MS in Data Science at Mercyhurst University"
 
 
 	# About section
@@ -103,15 +103,6 @@ theme = "hugo-artists-theme"
 		[[params.contact.social]]
 			icon = "linkedin"
 			link = "//www.linkedin.com/in/travisneilson"
-
-
-	[params.form]
-		title = "Let's work together"
-		# Form fields
-		name = "Your Name"
-		email = "Your Email"
-		message = "Tell me about your project"
-		buttonText = "Send"
 
 
 	[params.footer]
