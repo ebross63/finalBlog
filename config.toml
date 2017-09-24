@@ -1,4 +1,4 @@
 theme = "hugo-theme-bleak"
-baseURL = "http://example.org/"
+baseURL = "https://elizabethsfinalblog.netlify.com/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Elizabeth's Data Science Blog"
