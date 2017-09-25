@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Plot on Elizabeth&#39;s Data Science Blog</title>
-    <link>https://elizabethsfinalblog.netlify.com/tags/plot/</link>
+    <link>/tags/plot/</link>
     <description>Recent content in Plot on Elizabeth&#39;s Data Science Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 24 Sep 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://elizabethsfinalblog.netlify.com/tags/plot/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/plot/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Scatter Plots with ggplot and ggiraph</title>
-      <link>https://elizabethsfinalblog.netlify.com/post/scatter-plots-with-ggplot-and-ggiraph/</link>
+      <link>/post/scatter-plots-with-ggplot-and-ggiraph/</link>
       <pubDate>Sun, 24 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://elizabethsfinalblog.netlify.com/post/scatter-plots-with-ggplot-and-ggiraph/</guid>
+      <guid>/post/scatter-plots-with-ggplot-and-ggiraph/</guid>
       <description>This is a new post</description>
     </item>
     
