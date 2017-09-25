@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>Simple Data Vizualization</title>
-      <link>https://elizabeth-bross-blog.netlify.com/post/scatter-plots-with-ggplot-and-ggiraph/</link>
+      <title>Simple Data Visualization</title>
+      <link>https://elizabeth-bross-blog.netlify.com/post/simple-data-visualization/</link>
       <pubDate>Sun, 24 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://elizabeth-bross-blog.netlify.com/post/scatter-plots-with-ggplot-and-ggiraph/</guid>
-      <description>Scatter Plots with ggplot2 and ggiraphSimple data vizualizations can provide insight that is easy to view and understand. To explore scatter plots, we will use MLB data from R’s Lahman package. We will also use the ggiraph package to make an interactive scatter plot.
+      <guid>https://elizabeth-bross-blog.netlify.com/post/simple-data-visualization/</guid>
+      <description>Scatter Plots with ggplot2 and ggiraphSimple data visualization can provide insight that is easy to view and understand. To explore scatter plots, we will use MLB data from R’s Lahman package. We will also use the ggiraph package to make an interactive scatter plot.
 To begin this project, install all required R packages:
 library(Lahman)library(dplyr)library(ggplot2)library(ggiraph)Creating the datasetIn this example we will look at career homeruns vs.</description>
     </item>

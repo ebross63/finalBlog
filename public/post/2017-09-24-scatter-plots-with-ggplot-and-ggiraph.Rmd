@@ -1,14 +1,14 @@
 ---
-title: Simple Data Vizualization
+title: Simple Data Visualization
 author: Elizabeth Bross
 date: '2017-09-24'
-slug: scatter-plots-with-ggplot-and-ggiraph
+slug: simple-data-visualization
 categories: ["R"]
-tags: ["R Markdown", "plot"]
+tags: ["Data Visualization", "Baseball"]
 ---
 ##Scatter Plots with ggplot2 and ggiraph
 
-Simple data vizualizations can provide insight that is easy to view and understand. To explore scatter plots, we will use MLB data from R's Lahman package. We will also use the ggiraph package to make an interactive scatter plot.
+Simple data visualization can provide insight that is easy to view and understand. To explore scatter plots, we will use MLB data from R's Lahman package. We will also use the ggiraph package to make an interactive scatter plot.
 
 To begin this project, install all required R packages:
 

@@ -3,8 +3,14 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://elizabeth-bross-blog.netlify.com/post/scatter-plots-with-ggplot-and-ggiraph/</loc>
+    <loc>https://elizabeth-bross-blog.netlify.com/post/simple-data-visualization/</loc>
     <lastmod>2017-09-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://elizabeth-bross-blog.netlify.com/tags/baseball/</loc>
+    <lastmod>2017-09-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -13,13 +19,13 @@
   </url>
   
   <url>
-    <loc>https://elizabeth-bross-blog.netlify.com/</loc>
+    <loc>https://elizabeth-bross-blog.netlify.com/tags/data-visualization/</loc>
     <lastmod>2017-09-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://elizabeth-bross-blog.netlify.com/tags/plot/</loc>
+    <loc>https://elizabeth-bross-blog.netlify.com/</loc>
     <lastmod>2017-09-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -32,12 +38,6 @@
   
   <url>
     <loc>https://elizabeth-bross-blog.netlify.com/categories/r/</loc>
-    <lastmod>2017-09-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://elizabeth-bross-blog.netlify.com/tags/r-markdown/</loc>
     <lastmod>2017-09-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
