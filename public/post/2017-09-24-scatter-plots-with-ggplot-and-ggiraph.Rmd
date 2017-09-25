@@ -7,5 +7,45 @@ categories: ["R"]
 tags: ["R Markdown", "plot"]
 ---
 
-This is a new post
+#Simple Data Vizualization
+
+Simple data vizualizations can provide insight that is easy to view and understand. To explore scatter plots, we will use MLB data from R's Lahman package. We will also use the ggiraph package to make an interactive scatter plot.
+
+To begin this project, install all required R packages:
+
+```{r message=FALSE,warning=FALSE}
+library(Lahman)
+library(dplyr)
+library(ggplot2)
+library(ggiraph)
+```
+```{r}
+
+```
+
+##Creating the dataset
+
+In this example we will look at career homeruns vs. strikeouts for players with greater than 400 career homeruns. In order to do so, we much isolate the desired data from the Lahman package using dplyr. 
+
+First, we will create a data frame containing career homeruns and career strikeouts.
+
+```{r message=FALSE,warning=FALSE}
+df<-Batting%>%
+  group_by(playerID)%>%
+  summarize(career_HR=sum(HR),career_SO=sum(SO))%>%
+  filter(career_HR>=400)
+```
+
+Next, use dplyr's inner_join() function to add the nameFirst and nameLast variables to the initial data frame.
+
+```{r message=FALSE,warning=FALSE}
+HR_vs_SO<-inner_join(df,Master,by=c("playerID"))%>%
+  select(nameFirst,nameLast,career_HR,career_SO)
+```
+
+Finally, add a new column title "name" to the new HR_vs_SO data frame that includes both nameFirst and nameLast.
+
+```{r message=FALSE,warning=TRUE}
+HR_vs_SO$name<-paste(HR_vs_SO$nameFirst,HR_vs_SO$nameLast)
+```
 

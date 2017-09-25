@@ -2,22 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Elizabeth&#39;s Data Science Blog</title>
-    <link>/</link>
+    <link>https://elizabeth-bross-blog.netlify.com/</link>
     <description>Recent content on Elizabeth&#39;s Data Science Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 24 Sep 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://elizabeth-bross-blog.netlify.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Scatter Plots with ggplot and ggiraph</title>
-      <link>/post/scatter-plots-with-ggplot-and-ggiraph/</link>
+      <link>https://elizabeth-bross-blog.netlify.com/post/scatter-plots-with-ggplot-and-ggiraph/</link>
       <pubDate>Sun, 24 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/scatter-plots-with-ggplot-and-ggiraph/</guid>
-      <description>This is a new post</description>
+      <guid>https://elizabeth-bross-blog.netlify.com/post/scatter-plots-with-ggplot-and-ggiraph/</guid>
+      <description>Simple Data VizualizationSimple data vizualizations can provide insight that is easy to view and understand. To explore scatter plots, we will use MLB data from R’s Lahman package. We will also use the ggiraph package to make an interactive scatter plot.
+To begin this project, install all required R packages:
+library(Lahman)library(dplyr)library(ggplot2)library(ggiraph)Creating the datasetIn this example we will look at career homeruns vs. strikeouts for players with greater than 400 career homeruns.</description>
     </item>
     
   </channel>

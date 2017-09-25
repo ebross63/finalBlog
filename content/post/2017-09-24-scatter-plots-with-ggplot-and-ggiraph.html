@@ -9,4 +9,26 @@ tags: ["R Markdown", "plot"]
 
 
 
-<p>This is a new post</p>
+<div id="simple-data-vizualization" class="section level1">
+<h1>Simple Data Vizualization</h1>
+<p>Simple data vizualizations can provide insight that is easy to view and understand. To explore scatter plots, we will use MLB data from R’s Lahman package. We will also use the ggiraph package to make an interactive scatter plot.</p>
+<p>To begin this project, install all required R packages:</p>
+<pre class="r"><code>library(Lahman)
+library(dplyr)
+library(ggplot2)
+library(ggiraph)</code></pre>
+<div id="creating-the-dataset" class="section level2">
+<h2>Creating the dataset</h2>
+<p>In this example we will look at career homeruns vs. strikeouts for players with greater than 400 career homeruns. In order to do so, we much isolate the desired data from the Lahman package using dplyr.</p>
+<p>First, we will create a data frame containing career homeruns and career strikeouts.</p>
+<pre class="r"><code>df&lt;-Batting%&gt;%
+  group_by(playerID)%&gt;%
+  summarize(career_HR=sum(HR),career_SO=sum(SO))%&gt;%
+  filter(career_HR&gt;=400)</code></pre>
+<p>Next, use dplyr’s inner_join() function to add the nameFirst and nameLast variables to the initial data frame.</p>
+<pre class="r"><code>HR_vs_SO&lt;-inner_join(df,Master,by=c(&quot;playerID&quot;))%&gt;%
+  select(nameFirst,nameLast,career_HR,career_SO)</code></pre>
+<p>Finally, add a new column title “name” to the new HR_vs_SO data frame that includes both nameFirst and nameLast.</p>
+<pre class="r"><code>HR_vs_SO$name&lt;-paste(HR_vs_SO$nameFirst,HR_vs_SO$nameLast)</code></pre>
+</div>
+</div>

@@ -3,47 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/post/scatter-plots-with-ggplot-and-ggiraph/</loc>
+    <loc>https://elizabeth-bross-blog.netlify.com/post/scatter-plots-with-ggplot-and-ggiraph/</loc>
     <lastmod>2017-09-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://elizabeth-bross-blog.netlify.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2017-09-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/plot/</loc>
+    <loc>https://elizabeth-bross-blog.netlify.com/</loc>
     <lastmod>2017-09-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>https://elizabeth-bross-blog.netlify.com/tags/plot/</loc>
     <lastmod>2017-09-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/r/</loc>
+    <loc>https://elizabeth-bross-blog.netlify.com/post/</loc>
     <lastmod>2017-09-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/r-markdown/</loc>
+    <loc>https://elizabeth-bross-blog.netlify.com/categories/r/</loc>
     <lastmod>2017-09-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>https://elizabeth-bross-blog.netlify.com/tags/r-markdown/</loc>
+    <lastmod>2017-09-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://elizabeth-bross-blog.netlify.com/tags/</loc>
     <lastmod>2017-09-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
