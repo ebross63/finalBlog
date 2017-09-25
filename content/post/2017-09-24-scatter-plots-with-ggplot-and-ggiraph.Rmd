@@ -1,0 +1,10 @@
+---
+title: Scatter Plots with ggplot and ggiraph
+author: Elizabeth Bross
+date: '2017-09-24'
+slug: scatter-plots-with-ggplot-and-ggiraph
+categories:
+  - visualization
+tags: [R]
+---
+
