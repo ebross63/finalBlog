@@ -49,3 +49,14 @@ HR_vs_SO
 ```
 
 ###Creating the Scatter Plot
+
+First
+
+```{r message=FALSE,warning=FALSE}
+g<-ggplot()+
+  geom_point_interactive(data=HR_vs_SO,aes(x=career_SO,y=career_HR,tooltip=name,data_id=nameLast))+
+  ggtitle("Career Homeruns vs. Strikeouts for Great Hitters")+
+  xlab("Career Strikeouts")+
+  ylab("career Homeruns")
+```
+
