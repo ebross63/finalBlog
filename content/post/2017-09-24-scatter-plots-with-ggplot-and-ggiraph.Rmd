@@ -7,3 +7,5 @@ categories: ["R"]
 tags: ["R Markdown", "plot"]
 ---
 
+This is a new post
+
