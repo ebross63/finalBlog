@@ -9,16 +9,16 @@ tags: ["R Markdown", "plot"]
 
 
 
-<div id="simple-data-vizualization" class="section level1">
-<h1>Simple Data Vizualization</h1>
+<div id="simple-data-vizualization" class="section level2">
+<h2>Simple Data Vizualization</h2>
 <p>Simple data vizualizations can provide insight that is easy to view and understand. To explore scatter plots, we will use MLB data from R’s Lahman package. We will also use the ggiraph package to make an interactive scatter plot.</p>
 <p>To begin this project, install all required R packages:</p>
 <pre class="r"><code>library(Lahman)
 library(dplyr)
 library(ggplot2)
 library(ggiraph)</code></pre>
-<div id="creating-the-dataset" class="section level2">
-<h2>Creating the dataset</h2>
+<div id="creating-the-dataset" class="section level3">
+<h3>Creating the dataset</h3>
 <p>In this example we will look at career homeruns vs. strikeouts for players with greater than 400 career homeruns. In order to do so, we much isolate the desired data from the Lahman package using dplyr.</p>
 <p>First, we will create a data frame containing career homeruns and career strikeouts.</p>
 <pre class="r"><code>df&lt;-Batting%&gt;%
@@ -29,6 +29,25 @@ library(ggiraph)</code></pre>
 <pre class="r"><code>HR_vs_SO&lt;-inner_join(df,Master,by=c(&quot;playerID&quot;))%&gt;%
   select(nameFirst,nameLast,career_HR,career_SO)</code></pre>
 <p>Finally, add a new column title “name” to the new HR_vs_SO data frame that includes both nameFirst and nameLast.</p>
-<pre class="r"><code>HR_vs_SO$name&lt;-paste(HR_vs_SO$nameFirst,HR_vs_SO$nameLast)</code></pre>
+<pre class="r"><code>HR_vs_SO$name&lt;-paste(HR_vs_SO$nameFirst,HR_vs_SO$nameLast)
+
+HR_vs_SO</code></pre>
+<pre><code>## # A tibble: 55 x 5
+##    nameFirst nameLast career_HR career_SO           name
+##        &lt;chr&gt;    &lt;chr&gt;     &lt;int&gt;     &lt;int&gt;          &lt;chr&gt;
+##  1      Hank    Aaron       755      1383     Hank Aaron
+##  2      Jeff  Bagwell       449      1558   Jeff Bagwell
+##  3     Ernie    Banks       512      1236    Ernie Banks
+##  4    Adrian   Beltre       445      1584  Adrian Beltre
+##  5    Carlos  Beltran       421      1693 Carlos Beltran
+##  6     Barry    Bonds       762      1539    Barry Bonds
+##  7    Miguel  Cabrera       446      1516 Miguel Cabrera
+##  8      Jose  Canseco       462      1942   Jose Canseco
+##  9     Andre   Dawson       438      1509   Andre Dawson
+## 10    Carlos  Delgado       473      1745 Carlos Delgado
+## # ... with 45 more rows</code></pre>
+</div>
+<div id="creating-the-scatter-plot" class="section level3">
+<h3>Creating the Scatter Plot</h3>
 </div>
 </div>
