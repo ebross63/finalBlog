@@ -1,13 +1,12 @@
 ---
-title: Scatter Plots with ggplot and ggiraph
+title: Simple Data Vizualization
 author: Elizabeth Bross
 date: '2017-09-24'
 slug: scatter-plots-with-ggplot-and-ggiraph
 categories: ["R"]
 tags: ["R Markdown", "plot"]
 ---
-
-##Simple Data Vizualization
+##Scatter Plots with ggplot2 and ggiraph
 
 Simple data vizualizations can provide insight that is easy to view and understand. To explore scatter plots, we will use MLB data from R's Lahman package. We will also use the ggiraph package to make an interactive scatter plot.
 
@@ -50,7 +49,18 @@ HR_vs_SO
 
 ###Creating the Scatter Plot
 
-First
+To begin your scatter plot, use the ggplot2 package to plot the points. Be sure to set the aes (the aesthetics) to the proper data. Career strikeouts should be on the x axis and career homeruns should be on the y axis. Use ggtitle and xlab and ylab to add a title and axis lables.
+
+```{r message=FALSE,warning=FALSE}
+g<-ggplot()+
+  geom_point(data=HR_vs_SO,aes(x=career_SO,y=career_HR))+
+  ggtitle("Career Homeruns vs. Strikeouts for Great Hitters")+
+  xlab("Career Strikeouts")+
+  ylab("career Homeruns")
+
+```
+
+Integrate the ggiraph package with the following additions to your initial graph. The tooltip will make your graph interactive.
 
 ```{r message=FALSE,warning=FALSE}
 g<-ggplot()+
@@ -60,7 +70,7 @@ g<-ggplot()+
   ylab("career Homeruns")
 ```
 
-Render the graph 
+Your graph will not be displayed until you use the ggiraph() function to render the plot. Use this line to view your results. Editing the hover_css will make your results easier to see.
 
 ```{r message=FALSE,warning=FALSE}
 ggiraph(code=print(g),hover_css="fill:white;stroke:black")
