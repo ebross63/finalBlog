@@ -60,3 +60,9 @@ g<-ggplot()+
   ylab("career Homeruns")
 ```
 
+Render the graph 
+
+```{r message=FALSE,warning=FALSE}
+ggiraph(code=print(g),hover_css="fill:white;stroke:black")
+```
+
