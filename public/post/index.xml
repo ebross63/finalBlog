@@ -2,21 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Elizabeth&#39;s Data Science Blog</title>
-    <link>https://elizabeth-bross-blog.netlify.com/post/</link>
+    <link>/post/</link>
     <description>Recent content in Posts on Elizabeth&#39;s Data Science Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 Sep 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://elizabeth-bross-blog.netlify.com/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Easy Histograms with R</title>
+      <link>/post/easy-histograms-with-r/</link>
+      <pubDate>Tue, 26 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/easy-histograms-with-r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Simple Data Visualization</title>
-      <link>https://elizabeth-bross-blog.netlify.com/post/simple-data-visualization/</link>
+      <link>/post/simple-data-visualization/</link>
       <pubDate>Sun, 24 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://elizabeth-bross-blog.netlify.com/post/simple-data-visualization/</guid>
+      <guid>/post/simple-data-visualization/</guid>
       <description>Scatter Plots with ggplot2 and ggiraphSimple data visualization can provide insight that is easy to view and understand. To explore scatter plots, we will use MLB data from R’s Lahman package. We will also use the ggiraph package to make an interactive scatter plot.
 To begin this project, install all required R packages:
 library(Lahman)library(dplyr)library(ggplot2)library(ggiraph)Creating the datasetIn this example we will look at career homeruns vs.</description>

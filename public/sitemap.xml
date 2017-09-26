@@ -3,47 +3,52 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://elizabeth-bross-blog.netlify.com/post/simple-data-visualization/</loc>
+    <loc>/post/easy-histograms-with-r/</loc>
+    <lastmod>2017-09-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/simple-data-visualization/</loc>
     <lastmod>2017-09-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://elizabeth-bross-blog.netlify.com/tags/baseball/</loc>
-    <lastmod>2017-09-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://elizabeth-bross-blog.netlify.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://elizabeth-bross-blog.netlify.com/tags/data-visualization/</loc>
+    <loc>/tags/baseball/</loc>
     <lastmod>2017-09-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://elizabeth-bross-blog.netlify.com/</loc>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/data-visualization/</loc>
     <lastmod>2017-09-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://elizabeth-bross-blog.netlify.com/post/</loc>
-    <lastmod>2017-09-24T00:00:00+00:00</lastmod>
+    <loc>/</loc>
+    <lastmod>2017-09-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://elizabeth-bross-blog.netlify.com/categories/r/</loc>
-    <lastmod>2017-09-24T00:00:00+00:00</lastmod>
+    <loc>/post/</loc>
+    <lastmod>2017-09-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://elizabeth-bross-blog.netlify.com/tags/</loc>
+    <loc>/categories/r/</loc>
+    <lastmod>2017-09-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
     <lastmod>2017-09-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
