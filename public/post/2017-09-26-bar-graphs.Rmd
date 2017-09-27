@@ -39,7 +39,7 @@ To ensure the end result can be ordered by team, we must change the structure of
 df$name<-factor(df$name,levels=df$name)
 ```
 
-###Creating the Bargraph
+###Creating the Bar Graph
 
 ```{r message=FALSE,warning=FALSE}
 ggplot()+

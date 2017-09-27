@@ -83,8 +83,8 @@ library(ggiraph)</code></pre>
 <p>To ensure the end result can be ordered by team, we must change the structure of the name column to factor.</p>
 <pre class="r"><code>df$name&lt;-factor(df$name,levels=df$name)</code></pre>
 </div>
-<div id="creating-the-bargraph" class="section level3">
-<h3>Creating the Bargraph</h3>
+<div id="creating-the-bar-graph" class="section level3">
+<h3>Creating the Bar Graph</h3>
 <pre class="r"><code>ggplot()+
   geom_bar(data=df,aes(x=name,y=HR),stat=&quot;identity&quot;,color=&quot;blue&quot;,fill=&quot;white&quot;)+
   coord_flip()</code></pre>
