@@ -1,0 +1,40 @@
+---
+title: Bar Graphs
+author: Elizabeth Bross
+date: '2017-09-26'
+slug: bar-graphs
+categories: ["R"]
+tags: ["Data Visualization", "Baseball"]
+---
+
+
+
+<div id="bar-graphs-with-ggplot2-and-ggiraph" class="section level2">
+<h2>Bar Graphs with ggplot2 and ggiraph</h2>
+<p>Bar graphs are similiar to histograms which are discussed in the previous post. Instead of relying on counts to create bins, bar graphs allow the use of variables for both the x and y axis. We will continue to use MLB data from R’s Lahman package to explore bar graphs.</p>
+<p>To begin this project, install all required R packages.</p>
+<pre class="r"><code>library(Lahman)
+library(dplyr)
+library(ggplot2)
+library(ggiraph)</code></pre>
+<div id="cleaning-the-data" class="section level3">
+<h3>Cleaning the Data</h3>
+<p>To create a bar graph of home run totals by team for the year 1980, our first step is to filter, select, and arrange the desired data. We will use dplyr to accomplish this and name our new dataframe “df.”</p>
+<pre class="r"><code>df&lt;-Teams%&gt;%
+  filter(yearID==1980)%&gt;%
+  select(name,HR)%&gt;%
+  arrange(HR)</code></pre>
+</div>
+<div id="factors" class="section level3">
+<h3>Factors</h3>
+<p>To ensure the end result can be ordered by team, we must change the structure of the name column to factor.</p>
+<pre class="r"><code>df$name&lt;-factor(df$name,levels=df$name)</code></pre>
+</div>
+<div id="creating-the-bargraph" class="section level3">
+<h3>Creating the Bargraph</h3>
+<pre class="r"><code>ggplot()+
+  geom_bar(data=df,aes(x=name,y=HR),stat=&quot;identity&quot;,color=&quot;blue&quot;,fill=&quot;white&quot;)+
+  coord_flip()</code></pre>
+<p><img src="/post/2017-09-26-bar-graphs_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+</div>
+</div>

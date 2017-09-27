@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://elizabeth-bross-blog.netlify.com/post/bar-graphs/</loc>
+    <lastmod>2017-09-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://elizabeth-bross-blog.netlify.com/post/easy-histograms-with-r/</loc>
     <lastmod>2017-09-26T00:00:00+00:00</lastmod>
   </url>

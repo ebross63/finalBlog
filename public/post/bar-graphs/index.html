@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Easy Histograms with R</title>
+  <title>Bar Graphs</title>
   <link href="https://elizabeth-bross-blog.netlify.com//css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="https://elizabeth-bross-blog.netlify.com//css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
@@ -54,7 +54,7 @@
     <div class="row">
       <div class="col s12">
         <div class="card-panel">
-          <h4>Easy Histograms with R</h4>
+          <h4>Bar Graphs</h4>
           <p>
           
             
@@ -62,33 +62,33 @@
             
            
           </p>
-          <p><div id="histograms-with-ggplot2-and-ggiraph" class="section level2">
-<h2>Histograms with ggplot2 and ggiraph</h2>
-<p>Creating histograms is another simple data visualization technique that can be extreamly helpful when looking at data sets. To explore histograms, we will use MLB data from R’s Lahman package. We will also use the ggplot2 package to make a histogram.</p>
-<p>To begin this project, install all required R packages. Also include ggiraph because we will use it later:</p>
+          <p><div id="bar-graphs-with-ggplot2-and-ggiraph" class="section level2">
+<h2>Bar Graphs with ggplot2 and ggiraph</h2>
+<p>Bar graphs are similiar to histograms which are discussed in the previous post. Instead of relying on counts to create bins, bar graphs allow the use of variables for both the x and y axis. We will continue to use MLB data from R’s Lahman package to explore bar graphs.</p>
+<p>To begin this project, install all required R packages.</p>
 <pre class="r"><code>library(Lahman)
 library(dplyr)
 library(ggplot2)
 library(ggiraph)</code></pre>
 <div id="cleaning-the-data" class="section level3">
 <h3>Cleaning the Data</h3>
-<p>We would like to look at a histogram for MLB players’ recorded weight. Since this data is not available for all players, we must remove any enteries that are “NA.” We will use dplyr to accomplish this and name our new dataframe “df.”</p>
-<pre class="r"><code>df&lt;-Master%&gt;%
-  filter(!is.na(weight))%&gt;%
-  select(weight)</code></pre>
+<p>To create a bar graph of home run totals by team for the year 1980, our first step is to filter, select, and arrange the desired data. We will use dplyr to accomplish this and name our new dataframe “df.”</p>
+<pre class="r"><code>df&lt;-Teams%&gt;%
+  filter(yearID==1980)%&gt;%
+  select(name,HR)%&gt;%
+  arrange(HR)</code></pre>
 </div>
-<div id="creating-the-histogram" class="section level3">
-<h3>Creating the Histogram</h3>
-<p>Now that our dataset contains the information we are after, we can plot the histogram. Notice we have set the color to white, the color is the color of the outline. We can also change the fill color. Using a contrasting fill color will make the histogram easier to see. In this example we will use blue.</p>
+<div id="factors" class="section level3">
+<h3>Factors</h3>
+<p>To ensure the end result can be ordered by team, we must change the structure of the name column to factor.</p>
+<pre class="r"><code>df$name&lt;-factor(df$name,levels=df$name)</code></pre>
+</div>
+<div id="creating-the-bargraph" class="section level3">
+<h3>Creating the Bargraph</h3>
 <pre class="r"><code>ggplot()+
-  geom_histogram(data=df,aes(x=weight),color=&quot;white&quot;,fill=&quot;blue&quot;,bins=10)+
-  ggtitle(&quot;Baseball Player Weights&quot;)</code></pre>
-<p><img src="/post/2017-09-26-easy-histograms-with-r_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
-<p>In this example, adjusting the number of bins might be helpful for the final visualization. Here is the same data split into 25 bins instead of 10.</p>
-<pre class="r"><code>ggplot()+
-  geom_histogram(data=df,aes(x=weight),color=&quot;white&quot;,fill=&quot;blue&quot;,bins=25)+
-  ggtitle(&quot;Baseball Player Weights&quot;)</code></pre>
-<p><img src="/post/2017-09-26-easy-histograms-with-r_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+  geom_bar(data=df,aes(x=name,y=HR),stat=&quot;identity&quot;,color=&quot;blue&quot;,fill=&quot;white&quot;)+
+  coord_flip()</code></pre>
+<p><img src="/post/2017-09-26-bar-graphs_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 </div>
 </div>
 </p>
@@ -109,13 +109,13 @@ library(ggiraph)</code></pre>
     <div class="row">
       <div class="col s3 m1">
       
-        <a class="btn-floating btn-large waves-effect waves-light" href="https://elizabeth-bross-blog.netlify.com/post/bar-graphs/"><i class="mdi-navigation-arrow-back"></i></a>
+        <a class="btn-floating btn-large disabled"><i class="mdi-navigation-arrow-back"></i></a>
       
       </div>
       <div class="col s6 m10 center">&nbsp</div>
       <div class="col s3 m1">
       
-        <a class="btn-floating btn-large waves-effect waves-light" href="https://elizabeth-bross-blog.netlify.com/post/simple-data-visualization/"><i class="mdi-navigation-arrow-forward"></i></a>
+        <a class="btn-floating btn-large waves-effect waves-light" href="https://elizabeth-bross-blog.netlify.com/post/easy-histograms-with-r/"><i class="mdi-navigation-arrow-forward"></i></a>
       
       </div>
     </div>
