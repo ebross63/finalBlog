@@ -2,21 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Data Visualization on Elizabeth&#39;s Data Science Blog</title>
-    <link>/tags/data-visualization/</link>
+    <link>https://elizabeth-bross-blog.netlify.com/tags/data-visualization/</link>
     <description>Recent content in Data Visualization on Elizabeth&#39;s Data Science Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 Sep 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/data-visualization/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://elizabeth-bross-blog.netlify.com/tags/data-visualization/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Easy Histograms and Bar Graphs with R</title>
+      <link>https://elizabeth-bross-blog.netlify.com/post/easy-histograms-with-r/</link>
+      <pubDate>Tue, 26 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://elizabeth-bross-blog.netlify.com/post/easy-histograms-with-r/</guid>
+      <description>Histograms with ggplot2 and ggiraphCreating histograms is another simple data visualization technique that can be extreamly helpful when looking at data sets. To explore histograms, we will use MLB data from R’s Lahman package. We will also use the ggplot2 package to make a histogram.
+To begin this project, install all required R packages. Also include ggiraph because we will use it later:
+library(Lahman)library(dplyr)library(ggplot2)library(ggiraph)Cleaning the DataWe would like to look at a histogram for MLB players’ recorded weight.</description>
+    </item>
+    
+    <item>
       <title>Simple Data Visualization</title>
-      <link>/post/simple-data-visualization/</link>
+      <link>https://elizabeth-bross-blog.netlify.com/post/simple-data-visualization/</link>
       <pubDate>Sun, 24 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/simple-data-visualization/</guid>
+      <guid>https://elizabeth-bross-blog.netlify.com/post/simple-data-visualization/</guid>
       <description>Scatter Plots with ggplot2 and ggiraphSimple data visualization can provide insight that is easy to view and understand. To explore scatter plots, we will use MLB data from R’s Lahman package. We will also use the ggiraph package to make an interactive scatter plot.
 To begin this project, install all required R packages:
 library(Lahman)library(dplyr)library(ggplot2)library(ggiraph)Creating the datasetIn this example we will look at career homeruns vs.</description>

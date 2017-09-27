@@ -1,13 +1,40 @@
 ---
-title: Easy Histograms with R
+title: Easy Histograms and Bar Graphs with R
 author: Elizabeth Bross
 date: '2017-09-26'
 slug: easy-histograms-with-r
-categories:
-  - R
-tags: []
+categories: ["R"]
+tags: ["Data Visualization", "Baseball"]
 ---
 
 
 
-
+<div id="histograms-with-ggplot2-and-ggiraph" class="section level2">
+<h2>Histograms with ggplot2 and ggiraph</h2>
+<p>Creating histograms is another simple data visualization technique that can be extreamly helpful when looking at data sets. To explore histograms, we will use MLB data from R’s Lahman package. We will also use the ggplot2 package to make a histogram.</p>
+<p>To begin this project, install all required R packages. Also include ggiraph because we will use it later:</p>
+<pre class="r"><code>library(Lahman)
+library(dplyr)
+library(ggplot2)
+library(ggiraph)</code></pre>
+<div id="cleaning-the-data" class="section level3">
+<h3>Cleaning the Data</h3>
+<p>We would like to look at a histogram for MLB players’ recorded weight. Since this data is not available for all players, we must remove any enteries that are “NA.” We will use dplyr to accomplish this and name our new dataframe “df.”</p>
+<pre class="r"><code>df&lt;-Master%&gt;%
+  filter(!is.na(weight))%&gt;%
+  select(weight)</code></pre>
+</div>
+<div id="creating-the-histogram" class="section level3">
+<h3>Creating the Histogram</h3>
+<p>Now that our dataset contains the information we are after, we can plot the histogram. Notice we have set the color to white, the color is the color of the outline. We can also change the fill color. Using a contrasting fill color will make the histogram easier to see. In this example we will use blue.</p>
+<pre class="r"><code>ggplot()+
+  geom_histogram(data=df,aes(x=weight),color=&quot;white&quot;,fill=&quot;blue&quot;,bins=10)+
+  ggtitle(&quot;Baseball Player Weights&quot;)</code></pre>
+<p><img src="/post/2017-09-26-easy-histograms-with-r_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>In this example, adjusting the number of bins might be helpful for the final visualization. Here is the same data split into 25 bins instead of 10.</p>
+<pre class="r"><code>ggplot()+
+  geom_histogram(data=df,aes(x=weight),color=&quot;white&quot;,fill=&quot;blue&quot;,bins=25)+
+  ggtitle(&quot;Baseball Player Weights&quot;)</code></pre>
+<p><img src="/post/2017-09-26-easy-histograms-with-r_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+</div>
+</div>

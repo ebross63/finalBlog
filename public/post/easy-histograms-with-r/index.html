@@ -3,21 +3,21 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Easy Histograms with R</title>
-  <link href="//css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="//css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <title>Easy Histograms and Bar Graphs with R</title>
+  <link href="https://elizabeth-bross-blog.netlify.com//css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://elizabeth-bross-blog.netlify.com//css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
   <style type="text/css">
   
-    footer.page-footer{background-image: url(//images/default.png);}
+    footer.page-footer{background-image: url(https://elizabeth-bross-blog.netlify.com//images/default.png);}
   
   </style>
 </head>
 <body>
   <ul id="slide-out" class="side-nav">
-    <li><a href="/"><i class="mdi-action-home left"></i>Home<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
-    <li><a href="//categories"><i class="mdi-action-perm-media left"></i>Categories<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
-    <li><a href="//tags"><i class="mdi-action-loyalty left"></i>Tags<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
+    <li><a href="https://elizabeth-bross-blog.netlify.com/"><i class="mdi-action-home left"></i>Home<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
+    <li><a href="https://elizabeth-bross-blog.netlify.com//categories"><i class="mdi-action-perm-media left"></i>Categories<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
+    <li><a href="https://elizabeth-bross-blog.netlify.com//tags"><i class="mdi-action-loyalty left"></i>Tags<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
   </ul>
   <div id="index-banner" class="parallax-container">
   <a data-activates="slide-out" class="btn-floating button-collapse" style="top: 5px; left: 5px;"><i class="mdi-navigation-menu"></i></a>
@@ -35,13 +35,13 @@
         
         
         
-          <a href="//index.xml"><img src="//images/feed-dreamstale27.png"></a>
+          <a href="https://elizabeth-bross-blog.netlify.com//index.xml"><img src="https://elizabeth-bross-blog.netlify.com//images/feed-dreamstale27.png"></a>
         </div>
       </div>
     </div>
     <div class="parallax">
     
-      <img src="//images/default.png">
+      <img src="https://elizabeth-bross-blog.netlify.com//images/default.png">
     
     </div>
   </div>
@@ -54,16 +54,51 @@
     <div class="row">
       <div class="col s12">
         <div class="card-panel">
-          <h4>Easy Histograms with R</h4>
+          <h4>Easy Histograms and Bar Graphs with R</h4>
           <p>
           
             
-              <a href="//categories/r/">R</a>
+              <a href="https://elizabeth-bross-blog.netlify.com//categories/r/">R</a>
             
            
           </p>
-          <p></p>
+          <p><div id="histograms-with-ggplot2-and-ggiraph" class="section level2">
+<h2>Histograms with ggplot2 and ggiraph</h2>
+<p>Creating histograms is another simple data visualization technique that can be extreamly helpful when looking at data sets. To explore histograms, we will use MLB data from R’s Lahman package. We will also use the ggplot2 package to make a histogram.</p>
+<p>To begin this project, install all required R packages. Also include ggiraph because we will use it later:</p>
+<pre class="r"><code>library(Lahman)
+library(dplyr)
+library(ggplot2)
+library(ggiraph)</code></pre>
+<div id="cleaning-the-data" class="section level3">
+<h3>Cleaning the Data</h3>
+<p>We would like to look at a histogram for MLB players’ recorded weight. Since this data is not available for all players, we must remove any enteries that are “NA.” We will use dplyr to accomplish this and name our new dataframe “df.”</p>
+<pre class="r"><code>df&lt;-Master%&gt;%
+  filter(!is.na(weight))%&gt;%
+  select(weight)</code></pre>
+</div>
+<div id="creating-the-histogram" class="section level3">
+<h3>Creating the Histogram</h3>
+<p>Now that our dataset contains the information we are after, we can plot the histogram. Notice we have set the color to white, the color is the color of the outline. We can also change the fill color. Using a contrasting fill color will make the histogram easier to see. In this example we will use blue.</p>
+<pre class="r"><code>ggplot()+
+  geom_histogram(data=df,aes(x=weight),color=&quot;white&quot;,fill=&quot;blue&quot;,bins=10)+
+  ggtitle(&quot;Baseball Player Weights&quot;)</code></pre>
+<p><img src="/post/2017-09-26-easy-histograms-with-r_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>In this example, adjusting the number of bins might be helpful for the final visualization. Here is the same data split into 25 bins instead of 10.</p>
+<pre class="r"><code>ggplot()+
+  geom_histogram(data=df,aes(x=weight),color=&quot;white&quot;,fill=&quot;blue&quot;,bins=25)+
+  ggtitle(&quot;Baseball Player Weights&quot;)</code></pre>
+<p><img src="/post/2017-09-26-easy-histograms-with-r_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+</div>
+</div>
+</p>
           <p>26 Sep 2017
+            
+              
+                <a href="https://elizabeth-bross-blog.netlify.com//tags/data-visualization/">#Data Visualization</a>
+              
+                <a href="https://elizabeth-bross-blog.netlify.com//tags/baseball/">#Baseball</a>
+              
             
           </p>
           
@@ -80,7 +115,7 @@
       <div class="col s6 m10 center">&nbsp</div>
       <div class="col s3 m1">
       
-        <a class="btn-floating btn-large waves-effect waves-light" href="/post/simple-data-visualization/"><i class="mdi-navigation-arrow-forward"></i></a>
+        <a class="btn-floating btn-large waves-effect waves-light" href="https://elizabeth-bross-blog.netlify.com/post/simple-data-visualization/"><i class="mdi-navigation-arrow-forward"></i></a>
       
       </div>
     </div>
@@ -97,8 +132,8 @@
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="//js/materialize.min.js"></script>
-  <script src="//js/init.js"></script>
+  <script src="https://elizabeth-bross-blog.netlify.com//js/materialize.min.js"></script>
+  <script src="https://elizabeth-bross-blog.netlify.com//js/init.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
   

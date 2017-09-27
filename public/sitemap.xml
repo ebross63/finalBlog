@@ -3,53 +3,53 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/post/easy-histograms-with-r/</loc>
+    <loc>https://elizabeth-bross-blog.netlify.com/post/easy-histograms-with-r/</loc>
     <lastmod>2017-09-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/simple-data-visualization/</loc>
+    <loc>https://elizabeth-bross-blog.netlify.com/post/simple-data-visualization/</loc>
     <lastmod>2017-09-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/baseball/</loc>
-    <lastmod>2017-09-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/data-visualization/</loc>
-    <lastmod>2017-09-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/</loc>
+    <loc>https://elizabeth-bross-blog.netlify.com/tags/baseball/</loc>
     <lastmod>2017-09-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>https://elizabeth-bross-blog.netlify.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://elizabeth-bross-blog.netlify.com/tags/data-visualization/</loc>
     <lastmod>2017-09-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/r/</loc>
+    <loc>https://elizabeth-bross-blog.netlify.com/</loc>
     <lastmod>2017-09-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/</loc>
-    <lastmod>2017-09-24T00:00:00+00:00</lastmod>
+    <loc>https://elizabeth-bross-blog.netlify.com/post/</loc>
+    <lastmod>2017-09-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://elizabeth-bross-blog.netlify.com/categories/r/</loc>
+    <lastmod>2017-09-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://elizabeth-bross-blog.netlify.com/tags/</loc>
+    <lastmod>2017-09-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
