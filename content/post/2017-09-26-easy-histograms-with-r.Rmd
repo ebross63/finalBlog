@@ -1,10 +1,51 @@
 ---
-title: Easy Histograms with R
+title: Easy Histograms and Bar Graphs with R
 author: Elizabeth Bross
 date: '2017-09-26'
 slug: easy-histograms-with-r
-categories:
-  - R
-tags: []
+categories: ["R"]
+tags: ["Data Visualization", "Baseball"]
 ---
+
+##Histograms with ggplot2 and ggiraph
+
+Creating histograms is another simple data visualization technique that can be extreamly helpful when looking at data sets. To explore histograms, we will use MLB data from R's Lahman package. We will also use the ggplot2 package to make a histogram.
+
+To begin this project, install all required R packages. Also include ggiraph because we will use it later:
+
+```{r message=FALSE,warning=FALSE}
+library(Lahman)
+library(dplyr)
+library(ggplot2)
+library(ggiraph)
+```
+
+###Cleaning the Data
+
+We would like to look at a histogram for MLB players' recorded weight. Since this data is not available for all players, we must remove any enteries that are "NA."  We will use dplyr to accomplish this and name our new dataframe "df."
+
+```{r message=FALSE,warning=FALSE}
+df<-Master%>%
+  filter(!is.na(weight))%>%
+  select(weight)
+```
+
+###Creating the Histogram
+
+Now that our dataset contains the information we are after, we can plot the histogram. Notice we have set the color to white, the color is the color of the outline. We can also change the fill color. Using a contrasting fill color will make the histogram easier to see. In this example we will use blue.
+
+```{r message=FALSE,warning=FALSE}
+ggplot()+
+  geom_histogram(data=df,aes(x=weight),color="white",fill="blue",bins=10)+
+  ggtitle("Baseball Player Weights")
+```
+
+In this example, adjusting the number of bins might be helpful for the final visualization. Here is the same data split into 25 bins instead of 10.
+
+```{r message=FALSE,warning=FALSE}
+ggplot()+
+  geom_histogram(data=df,aes(x=weight),color="white",fill="blue",bins=25)+
+  ggtitle("Baseball Player Weights")
+```
+
 
