@@ -6,10 +6,19 @@
     <description>Recent content in Baseball on Elizabeth&#39;s Data Science Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Oct 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://elizabeth-bross-blog.netlify.com/tags/baseball/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Time Series Graph</title>
+      <link>https://elizabeth-bross-blog.netlify.com/post/time-series-graph/</link>
+      <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://elizabeth-bross-blog.netlify.com/post/time-series-graph/</guid>
+      <description>Time Series Graphs with ggplot2 and ggiraphI’ll conclude my data visualization series with a tutorial on time series graphs. We will continue to use MLB data from R’s Lahman package. Specifically, we’ll look at Babe Ruth’s home run totals for each year of his career. Next time, I’ll show you how to put these visualizations together in a dashboard so they are tidy and presentable.</description>
+    </item>
     
     <item>
       <title>Bar Graphs</title>
