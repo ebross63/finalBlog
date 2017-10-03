@@ -1,0 +1,60 @@
+---
+title: Time Series Graph
+author: Elizabeth Bross
+date: '2017-10-02'
+slug: time-series-graph
+categories:["R"]
+tags: ["Data Visualization", "Baseball"]
+---
+
+##Time Series Graphs with ggplot2 and ggiraph
+
+I'll conclude my data visualization series with a tutorial on time series graphs. We will continue to use MLB data from R's Lahman package. Specifically, we'll look at Babe Ruth's home run totals for each year of his career. Next time, I'll show you how to put these visualizations together in a dashboard so they are tidy and presentable. 
+
+Similar to my previous visualization posts, we will begin by installing the required R packages:
+
+```{r message=FALSE,warning=FALSE}
+library(Lahman)
+library(dplyr)
+library(ggplot2)
+library(ggiraph)
+```
+
+###Cleaning the Data
+
+We'll again use dplyr to extract the data we would like to look at. we'll first filter using Babe Ruth's playerID and then select the yearID and HR (homeruns) columns. Save this information into a dataframe named "df."
+
+```{r message=FALSE,warning=FALSE}
+df<-Batting%>%
+  filter(playerID=="ruthba01")%>%
+  select(yearID,HR)
+```
+
+###Creating the Time Series Graph
+
+To begin creating your time series graph, plot a line using the year for the x-axis and homeruns for the y-axis.
+
+```{r message=FALSE,warning=FALSE}
+ggplot()+
+  geom_line(data=df,aes(x=yearID,y=HR))
+```
+
+Next, add points to define each year on the graph. Notice the aesthetics remain identical.
+
+```{r message=FALSE,warning=FALSE}
+ggplot()+
+  geom_line(data=df,aes(x=yearID,y=HR))+
+  geom_point(data=df,aes(x=yearID,y=HR))
+```
+
+To make the graph interactive, change your geom_point line and set the tooltip to homeruns. Don't forget to run the ggiraph function to display your graph.
+
+```{r message=FALSE,warning=FALSE}
+g<-ggplot()+
+  geom_line(data=df,aes(x=yearID,y=HR))+
+  geom_point_interactive(data=df,aes(x=yearID,y=HR,tooltip=HR,data_id=yearID))
+
+ggiraph(code=print(g),hover_css="fill:white;stroke:red")
+```
+
+
