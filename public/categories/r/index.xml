@@ -6,10 +6,22 @@
     <description>Recent content in R on Elizabeth&#39;s Data Science Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Oct 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://elizabeth-bross-blog.netlify.com/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Putting it All Together: Dashboards with flexdashboard</title>
+      <link>https://elizabeth-bross-blog.netlify.com/post/putting-it-all-together-dashboards-with-flexdashboard/</link>
+      <pubDate>Sun, 08 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://elizabeth-bross-blog.netlify.com/post/putting-it-all-together-dashboards-with-flexdashboard/</guid>
+      <description>Dashboards Made EasyThe R package flexdashboard makes the creation of sleek dashboards easy. Dashboards are a great way to group visualizations together.
+More to come…
+Link to dashboard published on GitHub Pages: https://ebross63.github.io/flexdashboard/
+</description>
+    </item>
     
     <item>
       <title>Bar Graphs</title>

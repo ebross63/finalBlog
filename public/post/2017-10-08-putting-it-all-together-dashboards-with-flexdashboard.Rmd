@@ -1,0 +1,18 @@
+---
+title: 'Putting it All Together: Dashboards with flexdashboard'
+author: Elizabeth Bross
+date: '2017-10-08'
+slug: putting-it-all-together-dashboards-with-flexdashboard
+categories:
+  - R
+tags: ["Data Visualization","Baseball"]
+---
+
+##Dashboards Made Easy
+
+The R package flexdashboard makes the creation of sleek dashboards easy. Dashboards are a great way to group visualizations together. 
+
+More to come...
+
+Link to dashboard published on GitHub Pages: https://ebross63.github.io/flexdashboard/
+
